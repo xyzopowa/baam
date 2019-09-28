@@ -7,4 +7,5 @@ cp -rfp inventory/sample inventory/mycluster
 cp ../inventory.ini inventory/mycluster/
 cp k8s-cluster.yml  mycluster/group_vars/k8s-cluster/k8s-cluster.yml
 ansible-playbook -u perso -b -i inventory/mycluster/inventory.ini cluster.yml
-
+mkdir ~/.kube
+cp inventory/mycluster/artifacts/admin.conf ~/.kube/config
