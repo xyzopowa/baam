@@ -22,3 +22,12 @@ going for docker-ce : https://docs.docker.com/install/linux/docker-ce/centos/
 https://rancher.com/docs/rke/latest/en/installation/
 install rke cli 
 
+### create config.yaml
+rke config --name cluster.yml
+
+# deploy kubernetes
+rke up
+# connect
+mkdir ~/.kube
+cp kube_config_cluster.yml ~/.kube/config
+kubectl get nodes
