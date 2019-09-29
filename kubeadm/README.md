@@ -1,6 +1,6 @@
 
-
 ## install with kubeadm
+https://medium.com/platformer-blog/kubernetes-on-centos-7-with-firewalld-e7b53c1316af
 
 ### inst_sys.sh
 following  https://kubernetes.io/docs/setup/production-environment/tools/kubeadm/install-kubeadm/
@@ -22,3 +22,5 @@ going for docker-ce : https://docs.docker.com/install/linux/docker-ce/centos/
 ### inst_kube.sh
 install kubelet kubeadm and kubectl
 
+### init 
+https://kubernetes.io/docs/setup/production-environment/tools/kubeadm/high-availability/
